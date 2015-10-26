@@ -1,25 +1,9 @@
 <resources>
-
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- customize the color palette -->
         <item name="colorPrimaryDark">@color/material_blue_700</item>
         <item name="colorPrimary">@color/material_blue_500</item>
         <item name="colorAccent">@color/material_light_blue_500</item>
-        <item name="actionBarTheme">@style/ThemeOverlay.AppTheme.ActionBar</item>
-        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppTheme.PopupMenu</item>
     </style>
-
-    <style name="ThemeOverlay.AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:textColorPrimary">@color/material_primary_text</item>
-        <item name="android:textColorSecondary">@color/material_secondary_text</item>
-        <item name="actionMenuTextColor">@color/material_primary_text</item>
-        <item name="colorControlNormal">@color/material_primary_text</item>
-    </style>
-
-    <style name="ThemeOverlay.AppTheme.PopupMenu" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="android:colorBackground">#FFF</item>
-        <item name="android:textColorPrimary">#000</item>
-    </style>
-
 </resources>
