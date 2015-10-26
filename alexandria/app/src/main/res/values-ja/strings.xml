@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alexandria</string>
+
+    <!-- Menu Items -->
+    <string name="books">Hon no risuto</string>
+    <string name="scan">Sukyan/hon o tsuika</string>
+    <string name="about">Kono apuri ni tsuite</string>
+
+    <string name="navigation_drawer_open" >Ōpunnabigēshon hikidashi</string>
+    <string name="navigation_drawer_close">Tojiru nabigēshon hikidashi</string>
+    <string name="action_settings">Settei</string>
+    <string name="scan_button">Sukyan</string>
+    <string name="input_hint">Sōnyū ISBN - 13. Sūji nomi.</string>
+    <string name="book_cover">Bookcover</string>
+
+    <string name="ok_button">Tsugi</string>
+    <string name="cancel_button">Kyanseru</string>
+    <string name="not_found">Īe-chō ga mitsukarimasendeshita</string>
+    <string name="device_not_connected_to_internet">Shoseki o kensaku suru tame ni intānetto ni setsuzoku shite kudasai</string>
+    <string name="search">Kensaku</string>
+    <string name="delete">Bukku no sakujo</string>
+    <string name="pref_startScreen">Startscreen o sentaku</string>
+    <string name="title_activity_settings">Settei</string>
+    <string name="action_share">Shea</string>
+    <string name="back_button">Modoru</string>
+    <string name="share_text">Honwoyomu hitsuyō ga arimasu.</string>
+
+    <string name="about_text">Kono apurikēshon wa, anata no hon o sukyan, matawa ISBN o kaishite sorera o nyūryoku suru koto ga dekimasu. Soshite, anata wa subete o kaishite, narabe kaeru koto ga dekimasu saidai no hōmu gamenue no okiniiri no shōsetsu Udaciousness :).</string>
+
+    <!--Missing placeholder strings -->
+    <string name="missing_author_placeholder"></string>
+
+    <!--These fields added from google barcode api -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Kamera e no akusesu wa, kenshutsu no tame ni hitsuyō to sa remasu</string>
+    <string name="no_camera_permission">Sore wa, kamera no kyoka o motte inai tame, kono apurikēshon o jikkō suru koto wa dekimasen. Apurikēshon ga shūryō shimasu.</string>
+    <string name="low_storage_error">Kao kenshutsu-ki no isonsei wa hikui debaisusutorēji ni daunrōdo suru koto ga dekimasen</string>
+    <string name="title_activity_main">Bākōdorīdāsanpuru</string>
+    <string name="barcode_header">Bākōdo &quot;o yomitoru tame &quot; ni yomitotta bākōdo o kurikkushitekudasai</string>
+    <string name="read_barcode">Bākōdo o yomitorimasu</string>
+    <string name="auto_focus">Ōtofōkasu</string>
+    <string name="use_flash">Shiyō furasshu</string>
+    <string name="barcode_success">Bākōdo ga seijō ni yomitora</string>
+    <string name="barcode_failure">Īe bākōdo ga torikoma rete imasen</string>
+    <string name="barcode_error">"Yomikomi erābākōdo: %1$s"</string>
+    <string name="no_book_found_dialogue_title_text">Nani no hon ga mitsukarimasendeshita</string>
+    <string name="no_book_found_dialogue_content_text">Mōshiwakearimasenga, watashitachiha bangō o kakunin shi, sai shikō shite kudasai sono ISBN kōdo de hon o mitsukeru koto ga dekimasendeshita</string>
+
+</resources>
