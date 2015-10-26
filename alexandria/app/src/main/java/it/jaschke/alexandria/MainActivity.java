@@ -69,6 +69,20 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment nextFragment;
 
+        //Bug Fix: if the last fragment was the movie detail frag and you are in portrait mode on a tablet clicking on the list view item will only reload the detail fragment
+        if(fragmentManager.getBackStackEntryCount() != 0){
+            FragmentManager.BackStackEntry fragEntry = fragmentManager.getBackStackEntryAt(fragmentManager.getBackStackEntryCount() - 1);
+            if(fragEntry != null){
+                String fragName = fragEntry.getName();
+                if(fragName != null && fragName.equalsIgnoreCase("Book Detail")){
+                    int currentOrientation = getResources().getConfiguration().orientation;
+                    if (currentOrientation == Configuration.ORIENTATION_PORTRAIT) {
+                        getSupportFragmentManager().popBackStackImmediate();
+                    }
+                }
+            }
+        }
+
         switch (position){
             default:
             case 0:
@@ -167,7 +181,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
         public void onReceive(Context context, Intent intent) {
             if(intent.getStringExtra(MESSAGE_KEY)!=null){
                 //Replaced toast with dialouge Android principle: Enchant me :)
-                //showNoBookFoundDialog();
+                showNoBookFoundDialog();
             }
         }
     }

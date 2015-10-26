@@ -3,6 +3,7 @@ package it.jaschke.alexandria;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -57,8 +58,15 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+       boolean IS_TABLET = false;
+        IS_TABLET = isTablet();
+        if(IS_TABLET){
+            rootView = inflater.inflate(R.layout.fragment_add_book_tablet, container, false);
+        }else {
+            rootView = inflater.inflate(R.layout.fragment_add_book, container, false);
+        }
 
-        rootView = inflater.inflate(R.layout.fragment_add_book, container, false);
+
         ean = (EditText) rootView.findViewById(R.id.ean);
 
         ean.addTextChangedListener(new TextWatcher() {
@@ -242,5 +250,11 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
         else {
             super.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+    private boolean isTablet() {
+        return (getContext().getResources().getConfiguration().screenLayout
+                & Configuration.SCREENLAYOUT_SIZE_MASK)
+                >= Configuration.SCREENLAYOUT_SIZE_LARGE;
     }
 }
