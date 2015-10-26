@@ -3,13 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="4dp"
-    android:background="@drawable/list_item"
-    >
+    android:background="@drawable/list_item">
+
     <LinearLayout
         android:orientation="horizontal" android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        >
+        android:paddingTop="5dp">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -19,12 +19,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:contentDescription="@string/Image_team_crest_content_description"
                 android:id="@+id/home_crest"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="@dimen/TeamNames"
+                android:contentDescription="@string/team_name_content_description"
                 android:gravity="center"
                 android:text="@string/test_text"
                 android:id="@+id/home_name"/>
@@ -61,6 +63,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Image_team_crest_content_description"
                 android:layout_gravity="center"
                 android:id="@+id/away_crest"/>
             <TextView
@@ -68,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:contentDescription="@string/team_name_content_description"
                 android:text="@string/test_text"
                 android:textSize="@dimen/TeamNames"
                 android:id="@+id/away_name"/>
