@@ -47,4 +47,5 @@
     <string name="no_book_found_dialogue_title_text">Nani no hon ga mitsukarimasendeshita</string>
     <string name="no_book_found_dialogue_content_text">Mōshiwakearimasenga, watashitachiha bangō o kakunin shi, sai shikō shite kudasai sono ISBN kōdo de hon o mitsukeru koto ga dekimasendeshita</string>
 
+    <string name="no_internet_connection_found">Mitsukatta īe, intānetto setsuzoku wa, nettowāku ni setsuzoku shinaide kudasai</string>
 </resources>

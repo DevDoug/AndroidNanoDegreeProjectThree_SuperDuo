@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -127,6 +128,9 @@ public class BookService extends IntentService {
             }
 
             if (buffer.length() == 0) {
+                boolean hasConnection = Utility.deviceHasConnection(getApplicationContext());
+                if(!hasConnection)
+                    Toast.makeText(getApplicationContext(),getString(R.string.no_internet_connection_found),Toast.LENGTH_LONG).show();
                 return;
             }
             bookJsonString = buffer.toString();
