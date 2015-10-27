@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sakkā no sukoa</string>
+    <string name="hello_world">Konnichiwa sekai</string>
+    <string name="action_settings">Settei</string>
+    <string name="test_text">Tesuto</string>
+    <string name="today">Kyō</string>
+    <string name="yesterday">Kinō</string>
+    <string name="tomorrow">Toumorō</string>
+    <string name="champions_league">UEFA Chanpionzurīgu</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="premierleague">Puremiarīgu</string>
+    <string name="primeradivison">Puraimu-ka</string>
+    <string name="seriaa">Shirīzu A</string>
+    <string name="matchday_text">Matchidē</string>
+    <string name="group_stage_text">Gurūpusutēji</string>
+    <string name="first_knockout_round">Mazu nokkuautoraundo</string>
+    <string name="quarter_final"> ku ōtāfainaru</string>
+    <string name="semi_final">Junkesshō</string>
+    <string name="final_text">Kesshō</string>
+    <string name="share_text">Shea</string>
+    <string name="about">Yaku</string>
+    <string name="about_text">
+        Kono apurikēshon wa, sakkā no puremiarīgu, seria A, bundesurīga, purimēra no sukoa o shōgō shi emasu soshite UEFA chanpionzurīgu.
+        Subete no itchi dēta ga football - dēta. Orugu muryō no api kara shutoku shimasu.
+        Subete no chīmu no rogo wa, shoyū-sha no kyoka-sho o yōkyū suru sai ni http: / / Hdlogo. Wordpress. Komu/ kara shutoku shimasu.
+        Kono apuri no saisho no bājon wa Yahia hārido ibun eruwarido āmedo ni yotte sakusei sa reta, to shūsei sa reta bājon ga Udacity andoroido Nanodegree puroguramu no gakusei ni atae raremasu.
+        Bagu o hōkoku suru ni wa, matawa teian wa ykibnelwalid@ gmail. Komu ni mēru o sōshin suru koto o chūcho shimasen.
+        Ofushīzun no ma ni, nise no dēta ga apuri ni tsuika sa remasu.
+    </string>
+
+    <!--  Accessibility strings-->
+    <string name="Image_team_crest_content_description">Chīmukuresuto</string>
+    <string name="share_button_content_description">Shea botan</string>
+    <string name="team_name_content_description">Chīmu no namae</string>
+    <string name="home_widget_text_placeholder">Hōmuchīmu</string>
+    <string name="away_widget_text_placeholder">Aumuchīmu</string>
+</resources>
